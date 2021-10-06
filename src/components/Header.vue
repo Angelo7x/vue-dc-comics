@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="container">
       <img src="../assets/img/dc-logo.png" alt="">
       <ul>
         <li v-for="(elm, index) in navBar" :key="index"><a href="#"></a>{{elm.text}}</li>
