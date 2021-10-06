@@ -1,21 +1,31 @@
 <template>
   <div id="app">
-    <Header/>
-    <Main/>
-    <Footer/>
-  </div>
+    <div class="container">
+      <Header/>
+    </div>
+    <main>
+      <sectionHero/>
+      <sectionCards/>
+      <sectionLinks/>
+    </main>
+      <Footer/>
+    </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
+import sectionHero from "./components/sectionHero.vue"
+import sectionCards from "./components/sectionCards.vue"
+import sectionLinks from "./components/sectionLinks.vue"
 import Footer from "./components/Footer.vue"
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main,
+    sectionHero,
+    sectionCards,
+    sectionLinks,
     Footer
   }
 }
