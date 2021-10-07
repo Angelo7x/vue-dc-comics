@@ -9,11 +9,11 @@
       <div class="footer-bot">
         <div class="container">
           <div class="btn-left">
-            <button class="btn">SIGN-UP NOW!</button>
+            <button class="btn"><a href="#">SIGN-UP NOW!</a></button>
           </div>
           <div class="socials-right">
             <ul>
-              <li><h3>FOLLOW US</h3></li>
+              <li><a href="#"><h3>FOLLOW US</h3></a></li>
               <li><a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a></li>
               <li><a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a></li>
               <li><a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a></li>
@@ -69,16 +69,23 @@ export default {
       .btn-left {
         line-height: 100px;
         .btn {
-          color: white;
-          border: 2px solid #0282f9;
-          padding: 15px;
-          background-color: #303030;
+          a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid #0282f9;
+            padding: 15px;
+            background-color: #303030;
+          }
+          
         }
       }
     }
   }
 
   .socials-right {
+    a {
+      text-decoration: none;
+    }
     h3 {
       color: #0282f9;
     }
